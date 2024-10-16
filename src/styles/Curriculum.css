@@ -1,0 +1,173 @@
+.curriculum {
+    width: 100%;
+    padding: 78px 100px;
+    background: url('./src/assets/bd2.svg');
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    align-items: center;
+}
+
+.curriculum-heading {
+    color: #333;
+    text-align: center;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    /* 66.667% */
+}
+
+.curr-acc {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.curr-faq-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.curr-faq {
+    border-radius: 18.4px;
+    border: 1.15px solid #EEE;
+    background: #FFF;
+    box-shadow: 0px 1.15px 27.6px 0px rgba(136, 166, 255, 0.04);
+    padding: 34px 34px 28px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+.curr-faq-ques {
+    color: #000;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 23px;
+}
+
+.text-orange {
+    color: #FE3900;
+
+}
+
+.curr-faq-ans {
+    color: #484848;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 27px */
+    padding-top: 7px;
+    border-top: 1.15px solid #E9E9E9;
+    width: 90%;
+}
+
+.curr-acc-outer {
+    display: flex;
+    gap: 29px;
+    max-width: 854px;
+    width: 100%;
+}
+
+.curr-acc-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 19px;
+    max-width: 28px;
+    width: 100%;
+    margin-top: 16px;
+
+}
+
+.curr-accl-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.small-dot {
+    height: 15px;
+    align-self: stretch;
+    margin-top: 26px;
+}
+
+@media(width<1024px) {
+    .curriculum {
+        padding: 61px 64px;
+    }
+
+    .curriculum-heading {
+        font-size: 42px;
+    }
+}
+
+@media(width<768px) {
+    .curriculum {
+        padding: 61px 32px;
+        gap: 36px;
+    }
+
+    .curriculum-heading {
+        font-size: 36px;
+    }
+
+    .curr-faq-ques {
+        font-size: 20px;
+    }
+
+    .curr-faq-ans {
+        font-size: 16px;
+    }
+
+    .curr-faq {
+        padding: 20px;
+    }
+}
+
+@media(width<580px) {
+    .curriculum {
+        padding: 61px 16px;
+        gap: 22px;
+    }
+
+    .curr-faq {
+        padding: 14px 13px;
+    }
+
+    .curr-acc-left {
+        display: none;
+    }
+
+    .curriculum-heading {
+        font-size: 30px;
+    }
+
+    .curr-faq-ques {
+        font-size: 16px;
+    }
+
+    .curr-faq-ans {
+        font-size: 14px;
+    }
+
+    .curr-faq-arrow>svg {
+        width: 15px;
+        height: 30px;
+    }
+
+    .curr-acc-outer {
+        gap: 14px;
+    }
+}

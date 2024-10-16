@@ -1,0 +1,56 @@
+.section-div {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 128px 100px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-orange {
+    color: #FE3900;
+
+}
+
+.section-heading {
+    color: #333;
+    text-align: center;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1;
+    /* 66.667% */
+}
+
+@media(width<1024px) {
+    .section-div {
+        padding: 115px 64px;
+    }
+
+    .section-heading {
+        font-size: 42px;
+    }
+}
+
+@media(width<768px) {
+    .section-div {
+        padding: 115px 32px;
+    }
+
+    .section-heading {
+        font-size: 36px;
+    }
+}
+
+@media(width<580px) {
+    .section-div {
+        padding: 115px 16px;
+    }
+
+    .section-heading {
+        font-size: 30px;
+    }
+}
