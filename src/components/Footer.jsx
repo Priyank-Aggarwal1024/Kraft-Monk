@@ -46,14 +46,14 @@ function Footer() {
                         <img src={linkedin} alt="Linkedin" />
                     </div>
                     <div className="fotter-bottom-copyright fotter-bottom-copyright-large">
-                        © Copyright 2024 Internshala
-                        (Scholiverse Educare Private Limited)
+                        © Copyright 2024 Kraft Monk
+                        (Tutedude Private Limited)
                     </div>
                 </div>
             </div>
             <div className="fotter-bottom-copyright-small">
-                © Copyright 2024 Internshala
-                <p className="">(Scholiverse Educare Private Limited)</p>
+                © Copyright 2024 Kraft Monk
+                <p className="">(Tutedude Private Limited)</p>
             </div>
         </>
     );

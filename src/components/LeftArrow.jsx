@@ -1,5 +1,5 @@
 function LeftArrow(props) {
-    const { className, style, onClick } = props;
+    const { onClick } = props;
 
     return (
         <div className="test-left-arrow"

@@ -69,17 +69,18 @@ function Faq() {
                     {
                         faq.map((item, idx) => {
                             return (
-                                <div className={`faq-div ${!item.open && "faq-close-border"}`} key={idx}>
+                                <div className={`faq-div ${!item.open && "faq-close-border"}`} key={idx}
+                                    onClick={() => handleFaqOpen(idx)}
+                                >
                                     <div className="faq-div-left">
                                         <div className={`faq-ques ${item.open && "text-orange"}`}
-                                            onClick={() => handleFaqOpen(idx)}
                                         >{item.ques}</div>
                                         {
                                             item.open === true && <div className="faq-ans">{item.ans}</div>
                                         }
                                     </div>
                                     <div className="faq-div-right"
-                                        onClick={() => handleFaqOpen(idx)}
+
                                     >
                                         {
                                             item.open ? <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">

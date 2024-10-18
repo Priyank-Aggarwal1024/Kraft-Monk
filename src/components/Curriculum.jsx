@@ -50,12 +50,13 @@ function Curriculum() {
                         {
                             currArr.map((item, idx) => <div className="curr-accl-div" key={idx}>
                                 {
-                                    item.open ? <img src={darkdot} alt="Darkdot" /> : <img src={lightdot} alt="LightDot" />
+                                    (item.open) ? <img src={darkdot} alt="Darkdot" /> : <img src={lightdot} alt="LightDot" />
                                 }
-                                {idx != currArr.length - 1 && <img src={smalldot} alt='Small Dot' className="small-dot" />}
+                                {((idx != currArr.length - 1) || (idx == 2 && currArr[3].open)) && <img src={smalldot} alt='Small Dot' className="small-dot" />}
                                 {
-                                    item.open && idx != currArr.length - 1 && [1, 2].map((it, id) => <img key={id} src={smalldot} alt='Small Dot' className="small-dot" />)
+                                    ((item.open && idx != currArr.length - 1) || (idx == 2 && currArr[3].open)) && [1, 2].map((it, id) => <img key={id} src={smalldot} alt='Small Dot' className="small-dot" />)
                                 }
+                                { }
                             </div>)
                         }
                     </div>
