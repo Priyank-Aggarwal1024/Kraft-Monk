@@ -1,0 +1,97 @@
+.kraft-congrats {
+    display: flex;
+    width: 100%;
+    padding: 48px 16px;
+    background-color: #fff;
+    flex-direction: column;
+    gap: 28px;
+    align-items: center;
+
+}
+
+.congrats-heading {
+    color: #FE3900;
+    font-family: "SF Pro Display";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -2.88px;
+    text-align: center;
+}
+
+.text-black {
+    color: black;
+}
+
+.congrats-text {
+    color: #333;
+    font-family: Inter;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    /* 82.143% */
+    max-width: 650px;
+    text-align: center;
+}
+
+.congrats-text>p {
+    padding-bottom: 8px;
+}
+
+.congrats-text b {
+    color: black;
+}
+
+.congrats-join-button {
+    display: flex;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border: 2px solid #292929;
+    background: #FFF;
+    box-shadow: 6px 6px 0px 0px #292929;
+    color: #292929;
+    font-family: "SF Pro Display";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    /* 160% */
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+@media(width<768px) {
+    .congrats-heading {
+        font-size: 48px;
+    }
+
+    .congrats-text {
+        font-size: 24px;
+    }
+
+    .congrats-join-button {
+        padding: 12px 20px;
+    }
+}
+
+@media(width<580px) {
+    .kraft-congrats {
+        gap: 20px;
+    }
+
+    .congrats-heading {
+        font-size: 36px;
+    }
+
+    .congrats-text {
+        font-size: 20px;
+    }
+
+    .congrats-join-button {
+        padding: 12px 20px;
+    }
+}

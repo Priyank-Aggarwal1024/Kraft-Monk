@@ -2,6 +2,7 @@ import '../styles/Hero.css'
 import rightarrow2 from '../assets/rightarrow2.svg'
 import { FiArrowDownRight } from "react-icons/fi";
 import bd1 from '../assets/bd1.svg'
+import { Link } from 'react-router-dom';
 function Hero() {
     return (
         <>
@@ -15,11 +16,11 @@ function Hero() {
                         <img src={rightarrow2} alt="Right Arrow 2" className='right-arrow-2' />
                     </h2>
                 </div>
-                <div className="hero-bottom">
+                <Link className="hero-bottom" to={"/apply"}>
                     <span>Apply Now</span>
                     <FiArrowDownRight size="36" />
 
-                </div>
+                </Link>
             </div>
             <div className="craft-career">
                 <img src={bd1} alt="Background-design" className="cc-background-design" />
@@ -27,9 +28,9 @@ function Hero() {
                     <div className="cc-heding">
                         Craft Your Career with Kraftmonk Intern and Earn Up to ₹10K!
                     </div>
-                    <div className="cc-apply-top">
+                    <Link to={"/apply"} className="cc-apply-top">
                         <div className="cc-apply">Apply now</div>
-                    </div>
+                    </Link>
                 </div>
             </div>
         </>

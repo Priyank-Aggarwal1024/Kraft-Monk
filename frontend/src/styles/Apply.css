@@ -1,0 +1,189 @@
+.apply-main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 48px 16px;
+}
+
+.apply-main-inner {
+    display: flex;
+    width: 770px;
+    max-width: 100%;
+    padding: 18px 83px 38.559px 60px;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: 1px solid rgba(188, 169, 169, 0.84);
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.ami-top {
+    display: flex;
+    padding: 22.25px 0px 22.484px 0px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 15px;
+}
+
+.ami-logo-name {
+    color: #000;
+    font-family: "SF Pro Display";
+    font-size: 30.848px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.617px;
+}
+
+.apply-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 28px;
+}
+
+.apply-form-button {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 21.011px;
+    /* 116.727% */
+    display: flex;
+    height: 57px;
+    border-radius: 3.502px;
+    background: #FE3900;
+    padding: 12.256px 47.275px;
+    justify-content: center;
+    align-items: center;
+    gap: 8.755px;
+    align-self: stretch;
+    outline: none;
+    border: none;
+}
+
+.apply-form-inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.apply-input {
+    display: flex;
+    padding: 12.074px 28.977px;
+    align-items: center;
+    gap: 12.074px;
+    width: 100%;
+    border-radius: 9.659px;
+    border: 1.207px solid rgba(0, 0, 0, 0.21);
+    outline: none;
+    font-family: "SF Pro Display";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.4px;
+}
+
+.apply-input::placeholder {
+    color: #7a7979;
+
+}
+
+.apply-input-profession {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.apply-input-radiogroup {
+    display: flex;
+    align-items: center;
+    gap: 7.244px;
+}
+
+.apply-input-radiogroup>label {
+    color: #4C4C4C;
+    font-family: "SF Pro Display";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.4px;
+    width: 100%;
+}
+
+.apply-form-error {
+    color: red;
+    text-align: start;
+    font-family: "SF Pro Display";
+    width: 100%;
+}
+
+@media(width<768px) {
+    .apply-input-profession {
+        flex-direction: column;
+        gap: 9px;
+    }
+
+    .apply-main-inner {
+        padding: 0 14px 17px;
+        gap: 7px;
+    }
+
+    .apply-input-radiogroup {
+        gap: 6px;
+    }
+
+    .ami-logo-name {
+        font-size: 24px;
+    }
+}
+
+@media(width<580px) {
+
+    .ami-logo-name {
+        font-size: 18px;
+    }
+
+    .apply-form {
+        gap: 17px;
+
+    }
+
+    .apply-form-inner {
+        gap: 12px;
+    }
+
+    .apply-input {
+
+        display: flex;
+        padding: 10px 24px;
+        align-items: center;
+        gap: 10px;
+        font-size: 16px;
+    }
+
+    .apply-input-radiogroup>label {
+        font-size: 16px;
+    }
+
+    .apply-form-button {
+        font-size: 14px;
+        padding: 10px 16px;
+        height: unset;
+    }
+}
